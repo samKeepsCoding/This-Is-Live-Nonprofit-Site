@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --TIL-white-color: #ffffff;
+  --TIL-gold-color: #c18d21;
+  --TIL-black-color: #1c1b1a;
+  --TIL-grey-color: #d4d5d5;
+}
+
+body {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Raleway', sans-serif;
+}
