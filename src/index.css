@@ -13,4 +13,6 @@
 body {
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Raleway', sans-serif;
+  background-color: var(--TIL-black-color) ;
+  color: var(--TIL-white-color);
 }

@@ -1,15 +1,14 @@
 // Component Imports
-import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 
 
 function App() {
   return (
     <>
-      <>
-        <div className="h-screen bg-TILBlack text-TILWhite">
-          <Navbar/>
-        </div>
-      </>
+      
+        
+        <Hero/>
+
     </>
   );
 }
