@@ -1,0 +1,42 @@
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <>
+        <div className='w-full flex justify-center items-center p-4'>
+            <div className='w-full max-w-4xl flex flex-col md:flex-row justify-center items-start space-y-16 md:space-y-0 space-x-0 md:space-x-9 '>
+                <div className='text-center md:text-start flex flex-col md:w-1/2'>
+                    <h1 className='text-4xl font-bold'>
+                        Join our Email List
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button  className=' ] rounded-md mt-4 py-3 bg-TILGold hover:bg-TILBlack text-white font-bold hover:text-TILGold hover:border ease-linear duration-100'>SUBSCRIBE</button>
+                </div>
+
+                <div className='w-full md:w-1/2'>
+                    <h1 className='w-full text-center text-4xl font-bold'><span className='text-TILGold'>OR</span>Contact Us</h1>
+                    <form className='flex flex-col text-sm font-bold w-full '>
+                        <label for='user_name'>Full Name</label>
+                        <input type='text' name='user_name' id='user_name' required className='border-2 hover:border-TIGold rounded-sm font-medium px-3 py-2 mt-2 mb-2 focus:ring-0 text-TILBlack'/>
+
+                        <label for='email'>Email Address</label>
+                        <input type='email' name='user_email' required className='border-2 hover:border-TIGold rounded-sm font-medium px-3 py-2 mt-2 mb-2 focus:ring-0 text-TILBlack' />
+
+                        <label for='phone_number'>Phone Number</label>
+                        <input type='phone_number' name='phone_number' required className='border-2 hover:border-TIGold rounded-sm font-medium px-3 py-2 mt-2 mb-2 focus:ring-0 text-TILBlack' />
+
+                        <label>Message:</label>
+                        <textarea name='message' rows={6} className='border-2 p-3 hover:border-black mt-2 mb-2 text-TILBlack'></textarea>
+
+                        <button type='submit' className='w-full rounded-md mt-4 py-3 bg-TILGold hover:bg-TILBlack text-white font-bold hover:text-TILGold hover:border ease-linear duration-100'>SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Contact

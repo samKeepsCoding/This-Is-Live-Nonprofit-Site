@@ -1,0 +1,18 @@
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    width: 100%;
+}
+
+.team-grid1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.team-grid2 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.team-grid3 {
+    grid-area: 1 / 1 / 2 / 2;
+}

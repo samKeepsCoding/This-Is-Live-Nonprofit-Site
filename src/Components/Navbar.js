@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+import { AnimatePresence } from 'framer-motion'
 import '../styles.css'
 
 // Component imports
@@ -46,10 +47,11 @@ const Navbar = () => {
                     >
                         <AiOutlineMenu size={35}/>
                     </button>
-
-                    {sideMenu ? (
-                        <NavbarSideMenu handleSideMenu={value => setSideMenu(value)}/> 
-                    ): null}
+                    <AnimatePresence>
+                        {sideMenu ? (
+                            <NavbarSideMenu handleSideMenu={value => setSideMenu(value)}/> 
+                        ): null}
+                    </AnimatePresence>
 
                 </nav>
 
