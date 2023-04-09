@@ -1,5 +1,6 @@
 import React from 'react'
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
+import { Link } from 'react-scroll';
 
 // Icon imports
 import {AiOutlineClose } from 'react-icons/ai'
@@ -29,25 +30,33 @@ const NavbarSideMenu = ({handleSideMenu}) => {
                 >
                     <AiOutlineClose  size={35} className='text-white' />
                 </button>
-                <ul className='space-y-8 text-center font-bold text-lg'>
-                    <li>
-                       <a href='#home'>
-                            HOME
-                        </a> 
-                    </li>
-                    <li>
-                       <a href='#about'>
-                            
-                            ABOUT US
-                        </a> 
-                    </li>
-                    <li>
-                       <a href='#contact'>
-                            CONTACT
-                        </a> 
-                    </li>
+                <ul className='space-y-8 text-center font-bold text-lg flex flex-col'>
+                    <Link 
+                        to='hero' 
+                        smooth={true}
+                        className='cursor-pointer'
+                        onClick={() => handleSideMenu(false)}
+                    >
+                        HOME
+                    </Link>
+                    <Link 
+                        to='about' 
+                        smooth={true}
+                        className='cursor-pointer'
+                        onClick={() => handleSideMenu(false)}
+                    >
+                        ABOUT US
+                    </Link>
+                    <Link 
+                        to='contact' 
+                        smooth={true}
+                        className='cursor-pointer'
+                        onClick={() => handleSideMenu(false)}
+                    >
+                        CONTACT
+                    </Link>
                 </ul>
-                <button className='border-[0.3px] border-TILGold text-TILGold rounded-md px-4 py-1 text-xl font-light hover:bg-TILGold hover:text-TILBlack duration-100 ease-linear'>
+                <button className='border-[0.3px] border-TILGold text-TILGold rounded-md px-4 py-1 text-xl font-light hover:bg-TILGold hover:text-TILBlack duration-100 ease-linear' onClick={() => handleSideMenu(false)}>
                     <a href='/'>
                         DONATE
                     </a>

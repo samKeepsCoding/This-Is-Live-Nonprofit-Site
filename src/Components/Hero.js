@@ -1,12 +1,10 @@
 import React from 'react'
 
-import Navbar from './Navbar'
-
 const Hero = () => {
   return (
     <>
-      <div className='h-screen p-4'>
-        <Navbar/>
+      <div className='h-screen p-4' id='hero'>
+        
         <div className=' w-full max-w-7xl' id='home'>
           <div className='flex flex-col justify-center items-center md:items-start mt-[9rem] w-full max-w-5xl md:px-16'>
             <div className='flex flex-col text-start'>

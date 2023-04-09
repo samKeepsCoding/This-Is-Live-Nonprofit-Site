@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <>
-        <div className='w-full h-screen flex jusify-center items-center px-4'>
+        <div className='w-full h-screen flex jusify-center items-center px-4' id='about'>
             <div className='w-full max-w-7xl flex flex-col md:flex-row justify-center items-center md:items-start space-y-4 md:space-y-0 mx-10'>
                 {/* Left Side */}
                 <div className='w-full md:max-w-[45%] text-center md:text-start'>
