@@ -8,7 +8,9 @@ const Team = () => {
     <>
         <div 
           className='w-full flex justify-center items-center px-4 py-16 bg-cover bg-center' 
-          style={{backgroundImage:`url(${teamworkDemoImg})`}}>
+          style={{backgroundImage:`url(${teamworkDemoImg})`}}
+          id='team'
+        >
           <div className='max-w-4xl w-full flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-16 space-y-11 md:space-y-0'>
             <TeamCard/>
             <TeamCard/>

@@ -55,11 +55,14 @@ const Navbar = () => {
                         <span>.</span>  
                     </h1>
                     <ul className='hidden md:flex flex-row space-x-7'>
-                        <Link to='hero' className='nav-links'>
+                        <Link to='hero' smooth={true} className='nav-links'>
                             HOME
                         </Link>
                         <Link to='about' smooth={true} className='nav-links'>
                             ABOUT
+                        </Link>
+                        <Link to='team' smooth={true} className='nav-links'>
+                            OUR TEAM
                         </Link>
                         <Link to='contact' smooth={true} className='nav-links'>
                             CONTACT 

@@ -48,6 +48,14 @@ const NavbarSideMenu = ({handleSideMenu}) => {
                         ABOUT US
                     </Link>
                     <Link 
+                        to='team' 
+                        smooth={true}
+                        className='cursor-pointer'
+                        onClick={() => handleSideMenu(false)}
+                    >
+                        OUR TEAM
+                    </Link>
+                    <Link 
                         to='contact' 
                         smooth={true}
                         className='cursor-pointer'
